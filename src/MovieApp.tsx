@@ -163,7 +163,7 @@ const MovieApp: React.FC = () => {
         <form
           onSubmit={e => {
             e.preventDefault();
-            if(pageInput >= 1 && pageInput <= totalPages) setPage(pageInput);
+            if (pageInput >= 1 && pageInput <= totalPages) setPage(pageInput);
           }}
           className="flex items-center gap-1"
         >

@@ -9,6 +9,10 @@ import SeriesApp from './SeriesApp';
 import DiceRoller from './DiceRoller';
 import MovieDetails from './MovieDetails';
 import SeriesDetails from './SeriesDetails';
+import WorldTime from './WorldTime';
+import Calculator from './Calculator';
+import AgeCalculator from './AgeCalculator';
+import GuessNumberScore from './GuessNumberScore';
 
 function AppContent() {
   const location = useLocation();
@@ -24,6 +28,10 @@ function AppContent() {
         <Link className="text-white hover:text-blue-300 font-semibold" to="/movies">Movies</Link>
         <Link className="text-white hover:text-blue-300 font-semibold" to="/series">Series</Link>
         <Link className="text-white hover:text-orange-300 font-semibold" to="/dice">Dice Roller</Link>
+        <Link className="text-white hover:text-blue-300 font-semibold" to="/worldtime">World Time</Link>
+        <Link className="text-white hover:text-blue-300 font-semibold" to="/calculator">Calculator</Link>
+        <Link className="text-white hover:text-blue-300 font-semibold" to="/age-calculator">Age Calculator</Link>
+        <Link className="text-white hover:text-blue-300 font-semibold" to="/guess-number-score">Guess Number Score</Link>
       </nav>
       <Routes>
         <Route path="/" element={
@@ -41,6 +49,10 @@ function AppContent() {
         <Route path="/dice" element={<DiceRoller />} />
         <Route path="/movies/:imdbID" element={<MovieDetails />} />
         <Route path="/series/:imdbID" element={<SeriesDetails />} />
+        <Route path="/worldtime" element={<WorldTime />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/age-calculator" element={<AgeCalculator />} />
+        <Route path="/guess-number-score" element={<GuessNumberScore />} />
       </Routes>
     </div>
   );
