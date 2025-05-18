@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 
 const getRandom = () => Math.floor(Math.random() * 100) + 1;
 
+
 const GuessNumber: React.FC = () => {
   const [target, setTarget] = useState(getRandom());
   const [guess, setGuess] = useState('');
   const [message, setMessage] = useState('');
   const [attempts, setAttempts] = useState(0);
-
+console.log('target', target);
   const handleGuess = (e: React.FormEvent) => {
     e.preventDefault();
     const num = Number(guess);
