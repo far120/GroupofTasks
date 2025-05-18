@@ -13,6 +13,7 @@ import WorldTime from './WorldTime';
 import Calculator from './Calculator';
 import AgeCalculator from './AgeCalculator';
 import GuessNumberScore from './GuessNumberScore';
+import PomodoroTimer from './PomodoroTimer';
 
 function AppContent() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function AppContent() {
         <Link className="text-white hover:text-blue-300 font-semibold" to="/calculator">Calculator</Link>
         <Link className="text-white hover:text-blue-300 font-semibold" to="/age-calculator">Age Calculator</Link>
         <Link className="text-white hover:text-blue-300 font-semibold" to="/guess-number-score">Guess Number Score</Link>
+        <Link className="text-white hover:text-blue-300 font-semibold" to="/pomodoro">Pomodoro Timer</Link>
       </nav>
       <Routes>
         <Route path="/" element={
@@ -53,6 +55,7 @@ function AppContent() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/age-calculator" element={<AgeCalculator />} />
         <Route path="/guess-number-score" element={<GuessNumberScore />} />
+        <Route path="/pomodoro" element={<PomodoroTimer />} />
       </Routes>
     </div>
   );
