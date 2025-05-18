@@ -16,6 +16,7 @@ const GuessNumberScore: React.FC = () => {
     const [attempts, setAttempts] = useState(0);
     const [score, setScore] = useState<number | null>(null);
     const [gameOver, setGameOver] = useState(false);
+    console.log('Target:', target);
 
     const handleGuess = (e: React.FormEvent) => {
         e.preventDefault();
